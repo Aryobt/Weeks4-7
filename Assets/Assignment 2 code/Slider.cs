@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UI : MonoBehaviour
+public class Slider : MonoBehaviour
 {
+    public Slider upDown;
+
     // Start is called before the first frame update
     void Start()
     {
