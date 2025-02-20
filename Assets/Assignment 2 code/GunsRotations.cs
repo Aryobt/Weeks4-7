@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GunsRotations : MonoBehaviour
 {
+    public float Gunrot = 1f;
     
 
     public Button but;
@@ -18,6 +19,11 @@ public class GunsRotations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        Vector3 Gunrot = transform.eulerAngles;
+
+        Gunrot.z -= 1;
+
+        transform.eulerAngles = Gunrot;
     }
 }
