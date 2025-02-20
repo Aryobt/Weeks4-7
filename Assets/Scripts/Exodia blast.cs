@@ -17,6 +17,6 @@ public class Exodiablast : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime;
-        blast.value = t % blast.maxValue;
+        //blast.value = t % blast.maxValue;
     }
 }
