@@ -10,10 +10,12 @@ public class Sliderthing : MonoBehaviour
 
     float f;//calling a veriable for the value of the slider
 
+    public float t;//calling a veriable for the value of the slider
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        upDown = GetComponent<Slider>();//getting an component for the slider
     }
 
     // Update is called once per frame
@@ -29,5 +31,9 @@ public class Sliderthing : MonoBehaviour
         size.y = f;// changing the y value
 
         transform.localScale = size;// this line makes it so that the slider only changes the size and not the position of the object
+
+        t += Time.deltaTime;//making the update look more smooth with time.deltatime
+
+        upDown.value = t % upDown.maxValue;//taking the max value and cicles through it
     }
 }
