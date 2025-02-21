@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class GunsRotations : MonoBehaviour
 {
-    public float Gunrot = 1f;
-    public float speed = 5;
-    public float gun;
+    public float Gunrot = 1f;//
 
-    public Button but;
+    public float speed = 5;//
+
+    public float gun;//
+
+    public Button but;//
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +23,17 @@ public class GunsRotations : MonoBehaviour
     void Update()
     {
 
-        Vector3 Gunrot = transform.eulerAngles;
+        Vector3 Gunrot = transform.eulerAngles;//
 
-        Gunrot.z -= 1;
+        Gunrot.z -= 1;//
 
-        transform.eulerAngles = Gunrot;
+        transform.eulerAngles = Gunrot;//
 
-        Vector2 speed = transform.position;
-        speed.y -= transform.position.y;
-        transform.position = speed;
+        Vector2 speed = transform.position;//
+
+        speed.y -= transform.position.y;//
+
+        transform.position = speed;//
+
     }
 }
