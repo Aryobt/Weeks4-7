@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Exodiablast : MonoBehaviour
+public class Guns : MonoBehaviour
 {
-    Slider blast ;
-    float t;
     // Start is called before the first frame update
     void Start()
     {
-        blast = GetComponent<Slider>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD:Assets/Scripts/Healthbar.cs
         t += Time.deltaTime;
-       // blast.value = t % blast.maxValue;
+        //slider.value = t % slider.maxValue;
+=======
+        
+>>>>>>> Assignment2:Assets/Scripts/Guns.cs
     }
 }
